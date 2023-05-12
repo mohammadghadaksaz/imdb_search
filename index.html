@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>IMDb Search</title>
+	</head>
+	<body class="dark">
+		<header class="header">
+			<div class="header__left">
+				<img class="header__logo" src="./assets/logo.png" alt="IMDb Logo" />
+				<form action="" id="searchForm">
+					<input type="text" id="searchInput" class="input" placeholder="Search IMDb" />
+					<!-- TODO use image instead of text  -->
+					<input type="submit" value="Search" />
+				</form>
+			</div>
+			<div class="header__right">
+        <button id="toggleThemeButton">Toggle Theme</button>
+				<input type="text" id="apiInput" class="input" placeholder="API key" />
+			</div>
+		</header>
+
+		<div class="sep-big"></div>
+
+		<div class="movieInfo">
+			<img src="./assets/default-movie.jpg" id="movieImage" class="movieInfo__img" alt="Movie name" />
+			<div class="darkContainer movieInfo__right">
+				<div class="movieInfo__titleRow">
+					<div class="movieInfo__titleRowLeft">
+						<h2 class="movieInfo__title" id="movieTitle">The Shawshank Redemption</h2>
+						<div class="movieInfo__subtitle" id="movieYearLength">1994 . 2h 22m</div>
+					</div>
+					<div class="movieInfo__titleRowRight" id="movieRating">
+            9.3
+          </div>
+				</div>
+				<div class="movieInfo__tags" id="movieTags">
+					<div class="tag">Drama</div>
+				</div>
+				<div>
+					<div class="movieInfo__section" id="movieDesc">
+Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.
+					</div>
+					<div class="movieInfo__section">
+						<div class="movieInfo__sectionTitle">Director</div>
+            <div id="movieDirector">Frank Darabont</div>
+					</div>
+					<div class="movieInfo__section">
+						<div class="movieInfo__sectionTitle">Writer</div>
+            <div id="movieWriter">Stephen King</div>
+					</div>
+					<div class="movieInfo__section">
+						<div class="movieInfo__sectionTitle">Stars</div>
+            <div id="movieStars">Tim Robbins, Morgan Freeman, Don Gunton</div>
+					</div>
+				</div>
+        <div id="awards" class="movieInfo__topRated">
+          <div class="movieInfo__topRatedLeft" id="awardsLeft">Top rated movie #1</div>
+          <div class="movieInfo__topRatedRight" id="awardsRight">Nominated for 7 Oscars
+21 wins & 43 nominations total</div>
+        </div>
+			</div>
+		</div>
+
+    <div class="sep-med"></div>
+
+    <div class="similarMovies">
+      <h2 class="similarMovies__title">More like this</h2>
+      <div class="similarMovies__cards" id="similarCards">
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__rating">
+            <!-- TODO add star image -->
+            3.5
+          </div>
+          <div class="card__title">Interstellar</div>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__rating">
+            <!-- TODO add star image -->
+            3.5
+          </div>
+          <div class="card__title">Interstellar</div>
+        </div>
+
+        <div class="card">
+          <div class="card__img"></div>
+          <div class="card__rating">
+            <!-- TODO add star image -->
+            3.5
+          </div>
+          <div class="card__title">Interstellar</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+	</body>
+</html>
